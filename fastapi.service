@@ -3,8 +3,8 @@ Description=FastAPI service
 After=network.target
 
 [Service]
-User=ser
-Group=ser
+User=ubuntu
+Group=ubuntu
 WorkingDirectory=/home/ubuntu/fastapi-app
 ExecStart=/home/ubuntu/miniconda/envs/fastapi-taller/bin/uvicorn main:app --host 0.0.0.0 --port 8000
 Restart=always
