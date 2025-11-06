@@ -37,9 +37,9 @@ conda update -n base conda
 
 cd $APP_DIR
 
-echo "=== Creando entorno virtual con Conda... ==="
+echo "=== Creando y activando el entorno virtual con Conda... ==="
 conda create -y -n $CONDA_ENV_NAME python=3.10.18
-conda activate $CONDA_ENV_NAME
+source /home/ubuntu/miniconda/bin/activate $CONDA_ENV_NAME
 
 echo "=== Instalando dependencias del requirements.txt... ==="
 pip install -r requirements.txt
