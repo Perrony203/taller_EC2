@@ -1,0 +1,5 @@
+pydantic_core==2.33.2
+python-dateutil==2.9.0.post0
+python-dotenv==1.1.1
+s3transfer==0.14.0
+uvicorn==0.35.0

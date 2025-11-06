@@ -1,17 +1,12 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
-from datetime import datetime
-from uuid import UUID, uuid4
-from pymongo import MongoClient 
-from dotenv import load_dotenv
-from bson.binary import UuidRepresentation
-import os
-import boto3
-import time
 from boto3.s3.transfer import S3Transfer
-import glob
-from pathlib import Path
+from pydantic import BaseModel, Field
+from dotenv import load_dotenv
+from datetime import datetime
+from fastapi import FastAPI
+from uuid import uuid4
+import boto3
 import json
+import os
 
 load_dotenv()
 
