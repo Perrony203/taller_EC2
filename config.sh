@@ -34,8 +34,6 @@ fi
 
 echo "=== Dando permisos a Miniconda... ==="
 conda update -n base conda
-conda config --set report_errors false
-conda config --set accept_conda_terms true
 
 cd $APP_DIR
 
@@ -47,7 +45,7 @@ echo "=== Instalando dependencias del requirements.txt... ==="
 pip install -r requirements.txt
 
 echo "=== Copiando servicio al systemd... ==="
-sudo cp "$APP_DIR/$SERVICE_FILE" "$SYSTEMD_PATH"
+sudo cp "$SERVICE_FILE" "$SYSTEMD_PATH"
 sudo chown root:root "$SYSTEMD_PATH"
 sudo chmod 644 "$SYSTEMD_PATH"
 
