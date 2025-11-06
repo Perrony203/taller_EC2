@@ -33,6 +33,7 @@ else
 fi
 
 echo "=== Dando permisos a Miniconda... ==="
+conda update -n base conda
 conda config --set report_errors false
 conda config --set accept_conda_terms true
 
