@@ -17,6 +17,13 @@ sudo apt upgrade -y
 
 echo "=== Instalando dependencias del sistema... ==="
 sudo apt install -y git curl systemd
+sudo apt install unzip
+
+echo "=== Instalación y configuración de AWS... ==="
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+aws configure
 
 if ! command -v conda &> /dev/null
 then
