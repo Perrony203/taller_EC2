@@ -34,6 +34,7 @@ fi
 
 echo "=== Dando permisos a Miniconda... ==="
 conda update -n base conda
+conda search python
 
 cd $APP_DIR
 
